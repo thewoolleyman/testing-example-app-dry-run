@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Body from '@components/Body'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from 'next/head';
+import Body from '@components/Body';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 
 export default function Home() {
   return (
@@ -10,10 +10,10 @@ export default function Home() {
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <Body/>
+
+      <Body />
 
       <Footer />
     </div>
-  )
+  );
 }
