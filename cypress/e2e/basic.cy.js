@@ -3,10 +3,16 @@ describe('sample test', () => {
     cy.visit('/')
   })
 
-  it('displays the resources text', () => {
+  it('displays the label', () => {
     cy.get('h1')
-    .contains('Welcome to my app!');
+    .contains('This is the message returned from the serverless function');
   })
+
+  it('displays the response from the serverless function', () => {
+    cy.get('[data-id="message"]')
+    .contains('Hello World!');
+  })
+
   it('renders the Netlify logo image', () => {
     cy.get('img')
     .should('be.visible')
